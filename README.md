@@ -20,7 +20,7 @@ A modern, fast, and mobile-friendly web interface for a corporate motorcycle mai
    - npm or yarn
 2. **Clone the repository**
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/barisozy/rota-frontend
    cd rotam-dashboard
    ```
 3. **Install dependencies**

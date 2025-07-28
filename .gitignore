@@ -22,3 +22,42 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vite cache
+.vite
+
+# Tailwind CSS JIT cache
+.tailwindcss*
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs
+.idea/
+.vscode/
+!.vscode/extensions.json
+.history/
+
+# TypeScript
+*.tsbuildinfo
+
+# Env files
+.env*
+
+# Coverage
+coverage/
+
+# Build output
+build/
+
+
+.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

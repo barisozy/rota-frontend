@@ -1,50 +1,50 @@
 # Rotamotors Dashboard
 
-Kurumsal motosiklet bakım ve onarım servisi için modern, hızlı ve mobil uyumlu bir web arayüzü.
+A modern, fast, and mobile-friendly web interface for a corporate motorcycle maintenance and repair service.
 
-## Özellikler
-- **Tek sayfa uygulama (SPA)**: React + TypeScript ile geliştirilmiş, hızlı ve akıcı kullanıcı deneyimi
-- **Responsive Tasarım**: Tüm cihazlarda kusursuz görünüm (TailwindCSS)
-- **Kurumsal Menü**: Sosyal bar, sticky header, dinamik ve mobil uyumlu menü
-- **Hero Bölümü**: Etkileyici başlık, çağrı butonu ve motosiklet temalı arka plan
-- **Hizmetler**: Sunulan tüm servislerin modern kartlarla listelenmesi
-- **Hakkımızda**: Firma vizyonu ve tecrübesi
-- **Galeri**: Gerçek servis ve motosiklet görselleriyle referanslar
-- **Randevu Formu**: Kullanıcı dostu, validasyonlu ve efektli başvuru formu
-- **İletişim & Konum**: Tüm iletişim bilgileri ve harita entegrasyonu
-- **Kullanıcı Deneyimi**: Animasyonlar, efektler ve hızlı geçişler
+## Features
+- **Single Page Application (SPA)**: Built with React + TypeScript for a fast and smooth user experience
+- **Responsive Design**: Perfect appearance on all devices (TailwindCSS)
+- **Corporate Menu**: Social bar, sticky header, dynamic and mobile-friendly menu
+- **Hero Section**: Impressive headline, call-to-action button, and motorcycle-themed background
+- **Services**: All offered services listed with modern cards
+- **About Us**: Company vision and experience
+- **Gallery**: Real service and motorcycle photos as references
+- **Appointment Form**: User-friendly, validated, and animated application form
+- **Contact & Location**: All contact information and map integration
+- **User Experience**: Animations, effects, and fast transitions
 
-## Kurulum
-1. **Gereksinimler**
+## Getting Started
+1. **Requirements**
    - Node.js 18+
-   - npm veya yarn
-2. **Projeyi klonlayın**
+   - npm or yarn
+2. **Clone the repository**
    ```sh
    git clone <repo-url>
    cd rotam-dashboard
    ```
-3. **Bağımlılıkları yükleyin**
+3. **Install dependencies**
    ```sh
    npm install
-   # veya
+   # or
    yarn install
    ```
-4. **Geliştirme sunucusunu başlatın**
+4. **Start the development server**
    ```sh
    npm run dev
-   # veya
+   # or
    yarn dev
    ```
-5. **Projeyi tarayıcıda görüntüleyin**
+5. **View the project in your browser**
    - [http://localhost:5173](http://localhost:5173)
 
-## Kullanılan Teknolojiler
+## Technologies Used
 - [React](https://react.dev/) (TypeScript)
 - [Vite](https://vitejs.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [FontAwesome](https://fontawesome.com/) (ikonlar için)
+- [FontAwesome](https://fontawesome.com/) (for icons)
 
-## Klasör Yapısı
+## Folder Structure
 ```
 rotam-dashboard/
 ├── public/
@@ -61,13 +61,13 @@ rotam-dashboard/
 └── ...
 ```
 
-## Özelleştirme
-- **Renkler**: `tailwind.config.js` ve CSS değişkenleri ile kurumsal renkler kolayca değiştirilebilir.
-- **Fotoğraflar**: `src/components/landing/Gallery.tsx` ve `Hero.tsx` dosyalarındaki görselleri güncelleyebilirsiniz.
-- **Sosyal Medya**: Menü üst barındaki sosyal linkleri güncelleyebilirsiniz.
+## Customization
+- **Colors**: Easily change corporate colors via `tailwind.config.js` and CSS variables.
+- **Photos**: Update images in `src/components/landing/Gallery.tsx` and `Hero.tsx`.
+- **Social Media**: Update social links in the menu top bar.
 
-## Katkı
-Pull request ve issue açarak katkıda bulunabilirsiniz.
+## Contributing
+You can contribute by opening pull requests and issues.
 
-## Lisans
+## License
 MIT

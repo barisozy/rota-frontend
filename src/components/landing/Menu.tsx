@@ -34,8 +34,8 @@ const Menu: React.FC = () => {
       {/* Sosyal ağ ikonları üst barı */}
       <div className="w-full bg-white flex items-center justify-end px-8 md:px-130" style={{ height: '38px', minHeight: '38px', maxHeight: '44px', zIndex: 60, position: 'relative' }}>
         <div className="flex gap-4 text-gray-700 text-lg">
-          <a href="https://www.instagram.com/rotamotors2024/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[var(--main-red)] transition"><i className="fab fa-instagram" style={{color:'darkgrey'}}></i></a>
-          <a href="https://www.facebook.com/ebubekir.ozdemir.54535/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-[var(--main-red)] transition"><i className="fab fa-facebook" style={{color:'darkgrey'}}></i></a>
+          <a href="https://www.instagram.com/rotamotors2024/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[var(--main-red)] transition"><i className="fab fa-instagram" style={{color:'darkgray'}}></i></a>
+          <a href="https://www.facebook.com/ebubekir.ozdemir.54535/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-[var(--main-red)] transition"><i className="fab fa-facebook" style={{color:'darkgray'}}></i></a>
         </div>
       </div>
       <header className="sticky top-0 z-50 shadow-md border-b border-gray-200 bg-white">

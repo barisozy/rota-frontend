@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RotaMotorsLogo from "../../../public/RotaMotorsTransparanLogo.png";
+import RotaMotorsLogo from "../../../public/RotaMotorsLogo.png";
 
 const navLinks = [
   { label: "Anasayfa", href: "#hero" },

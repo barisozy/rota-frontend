@@ -45,7 +45,7 @@ const Menu: React.FC = () => {
             {/* Sol taraf: Logo */}
             <div className="bg-white flex items-center justify-end pr-2 md:pr-20 h-full shadow-sm flex-[0_0_50%] md:flex-[0_0_30%]">
               <a href="#hero" className="flex items-center gap-2 ml-2 md:ml-6 pt-12">
-                <img src={RotaMotorsLogo} alt="Rota Motors Logo" className="h-100 w-auto object-contain" />
+                <img src={RotaMotorsLogo} alt="Rota Motors Logo" className="h-100 md:h-100 lg:h-100 w-auto object-contain"/>
               </a>
             </div>
             {/* Sağ taraf: Menü */}

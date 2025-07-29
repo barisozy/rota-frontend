@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import RotaMotorsLogo from "../../../public/RotaMotorsTransparanLogo.png";
 
 const navLinks = [
   { label: "Anasayfa", href: "#hero" },
@@ -42,11 +43,9 @@ const Menu: React.FC = () => {
           {/* Masaüstü: 30-70, Mobil: 50-50 bölünmüş menü */}
           <div className="flex w-[70vw] min-w-[340px] max-w-[900px] h-full mx-auto">
             {/* Sol taraf: Logo */}
-            <div className="bg-white flex items-center justify-end pr-2 md:pr-20 h-full shadow-sm
-              flex-[0_0_50%] md:flex-[0_0_30%]">
+            <div className="bg-white flex items-center justify-end pr-2 md:pr-20 h-full shadow-sm flex-[0_0_50%] md:flex-[0_0_30%]">
               <a href="#hero" className="flex items-center gap-2 ml-2 md:ml-6">
-                <span className="block w-10 h-10 rounded-full bg-[var(--main-red)] text-white flex items-center justify-center font-bold text-2xl">R</span>
-                <span className="text-2xl md:text-3xl font-bold text-black tracking-tight uppercase">ROTA MOTORS</span>
+                <img src={RotaMotorsLogo} alt="Rota Motors Logo" className="h-48 w-auto object-contain" />
               </a>
             </div>
             {/* Sağ taraf: Menü */}

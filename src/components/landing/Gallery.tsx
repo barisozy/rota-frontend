@@ -10,7 +10,7 @@ const images = [
 const Gallery: React.FC = () => (
   <section className="py-20 px-4 bg-white w-full max-w-full" id="gallery">
     <div className="w-full max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 tracking-tight text-[var(--main-red)]">GALERİ</h2>
+      <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 tracking-tight text-[var(--main-red)]">Galeri</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-full">
         {images.map((src, i) => (
           <div key={i} className="bg-[var(--main-light)] border border-[var(--main-gray)] rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300">

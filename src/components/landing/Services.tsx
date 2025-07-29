@@ -28,7 +28,7 @@ const services = [
 const Services: React.FC = () => (
   <section className="py-20 px-4 bg-[var(--main-light)] w-full max-w-full" id="services">
     <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 tracking-tight w-full max-w-full text-[var(--main-red)]">
-      HİZMETLERİMİZ
+      Hizmetlerimiz
     </h2>
     <div className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {services.map((service, i) => (

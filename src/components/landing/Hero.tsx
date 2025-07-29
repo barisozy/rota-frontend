@@ -14,8 +14,8 @@ const Hero: React.FC = () => (
       />
     </div>
     <div className="relative z-10 w-full max-w-2xl mx-auto text-center text-white py-24 px-4">
-      <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg uppercase">
-        ROTAMOTORS ile Yolda Kalmayın!
+      <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
+        ROTA MOTORS ile Yolda Kalmayın!
       </h1>
       <p className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow">
         Güvenilir, hızlı ve profesyonel motosiklet bakım & onarım hizmetleri. İstanbul'un her yerine servis!

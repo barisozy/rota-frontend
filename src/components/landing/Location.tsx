@@ -4,7 +4,7 @@ import React from "react";
 const Location: React.FC = () => (
   <section className="py-20 px-4 bg-[var(--main-light)] w-full max-w-full" id="location">
     <div className="w-full max-w-2xl mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold mb-8 tracking-tight uppercase text-[var(--main-red)]">Konumumuz</h2>
+      <h2 className="text-3xl md:text-4xl font-extrabold mb-8 tracking-tight text-[var(--main-red)]">Konumumuz</h2>
       <div className="bg-white rounded-lg shadow p-4 border border-[var(--main-gray)]">
         <iframe
           title="Konum"

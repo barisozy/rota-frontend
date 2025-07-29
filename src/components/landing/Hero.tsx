@@ -13,7 +13,7 @@ const Hero: React.FC = () => (
         aria-hidden="true"
       />
     </div>
-    <div className="relative z-10 w-full max-w-2xl mx-auto text-center text-white pt-60 px-4">
+    <div className="relative z-10 w-full max-w-2xl mx-auto text-center text-white pt-15 md:pt-60 px-4">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
         ROTA MOTORS ile Yolda Kalmayın!
       </h1>

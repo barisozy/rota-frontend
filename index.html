@@ -19,42 +19,49 @@
 
 <!DOCTYPE html>
 <html lang="tr"> <!-- Changed to Turkish for local audience -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Rota Motors | İstanbul Motorsiklet Tamir, Bakım & Yol Yardım Hizmetleri</title>
-    <meta name="description" content="İstanbul'da profesyonel motorsiklet tamir, bakım, yedek parça ve 7/24 yol yardım hizmetleri. Honda, Yamaha, BMW tüm markalara özel servis.">
-    <meta name="keywords" content="motorsiklet tamiri, motorsiklet bakım, istanbul motorsiklet servisi, yol yardım, motorsiklet yedek parça">
-    <meta name="author" content="Rota Motors">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://barisozy.github.io/rota-frontend/"> <!-- Replace with actual domain -->
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://barisozy.github.io/rota-frontend/"> <!-- Replace with actual domain -->
-    <meta property="og:title" content="Rota Motors | İstanbul Motorsiklet Tamir, Bakım & Yol Yardım Hizmetleri">
-    <meta property="og:description" content="İstanbul'da profesyonel motorsiklet tamir, bakım, yedek parça ve 7/24 yol yardım hizmetleri. Tüm marka motorsikletlere özel servis.">
-    <meta property="og:image" content="https://barisozy.github.io/rota-frontend//RotaMotorsLogo.png"> <!-- Replace with actual URL -->
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://barisozy.github.io/rota-frontend/"> <!-- Replace with actual domain -->
-    <meta property="twitter:title" content="Rota Motors | İstanbul Motorsiklet Tamir, Bakım & Yol Yardım Hizmetleri">
-    <meta property="twitter:description" content="İstanbul'da profesyonel motorsiklet tamir, bakım, yedek parça ve 7/24 yol yardım hizmetleri. Tüm marka motorsikletlere özel servis.">
-    <meta property="twitter:image" content="https://barisozy.github.io/rota-frontend//RotaMotorsLogo.png"> <!-- Replace with actual URL -->
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/rota-frontend/RotaMotorsLogo.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <!-- Recommended for mobile -->
-    
-    <!-- Preconnect for CDNs -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Rota Motors | İstanbul Motorsiklet Tamir, Bakım & Yol Yardım Hizmetleri</title>
+  <meta name="description"
+    content="İstanbul'da profesyonel motorsiklet tamir, bakım, yedek parça ve 7/24 yol yardım hizmetleri. Honda, Yamaha, BMW tüm markalara özel servis.">
+  <meta name="keywords"
+    content="motorsiklet tamiri, motorsiklet bakım, istanbul motorsiklet servisi, yol yardım, motorsiklet yedek parça">
+  <meta name="author" content="Rota Motors">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://barisozy.github.io/rota-frontend/"> <!-- Replace with actual domain -->
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://barisozy.github.io/rota-frontend/"> <!-- Replace with actual domain -->
+  <meta property="og:title" content="Rota Motors | İstanbul Motorsiklet Tamir, Bakım & Yol Yardım Hizmetleri">
+  <meta property="og:description"
+    content="İstanbul'da profesyonel motorsiklet tamir, bakım, yedek parça ve 7/24 yol yardım hizmetleri. Tüm marka motorsikletlere özel servis.">
+  <meta property="og:image" content="https://barisozy.github.io/rota-frontend//RotaMotorsLogo.png">
+  <!-- Replace with actual URL -->
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://barisozy.github.io/rota-frontend/"> <!-- Replace with actual domain -->
+  <meta property="twitter:title" content="Rota Motors | İstanbul Motorsiklet Tamir, Bakım & Yol Yardım Hizmetleri">
+  <meta property="twitter:description"
+    content="İstanbul'da profesyonel motorsiklet tamir, bakım, yedek parça ve 7/24 yol yardım hizmetleri. Tüm marka motorsikletlere özel servis.">
+  <meta property="twitter:image" content="https://barisozy.github.io/rota-frontend//RotaMotorsLogo.png">
+  <!-- Replace with actual URL -->
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/rota-frontend/RotaMotorsLogo.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <!-- Recommended for mobile -->
+
+  <!-- Preconnect for CDNs -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AutoRepair",
@@ -88,32 +95,20 @@
       ] 
     }
     </script>
-    
-    <!-- Preloading main script -->
-    <link rel="preload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC50c3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykhKS5yZW5kZXIoCiAgPFN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9TdHJpY3RNb2RlPiwKKQo=" as="script">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    
-    <!-- Preloading critical resources -->
-    <link rel="preload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC50c3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykhKS5yZW5kZXIoCiAgPFN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9TdHJpY3RNb2RlPiwKKQo=" as="script">
+
+  <!-- Preloading main script -->
+  <link rel="preload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC50c3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykhKS5yZW5kZXIoCiAgPFN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9TdHJpY3RNb2RlPiwKKQo=" as="script">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Preloading critical resources -->
+  <link rel="preload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC50c3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykhKS5yZW5kZXIoCiAgPFN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9TdHJpY3RNb2RlPiwKKQo=" as="script">
 </head>
+
 <body>
-    <!-- Accessibility skip link -->
-    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
-    
-    <div id="root"></div>
-    
-    
-    <!-- Google Analytics placeholder -->
-    <!-- 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    -->
+  <div id="root"></div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </body>
+
 </html>

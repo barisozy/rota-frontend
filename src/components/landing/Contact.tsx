@@ -12,7 +12,7 @@ const Contact: React.FC = () => (
         </div>
         <div className="mb-4">
           <span className="block text-base text-[var(--main-dark)] font-semibold mb-1">Telefon</span>
-          <a href="tel:+905551112233" className="text-[var(--main-red)] font-bold hover:underline">+90 543 527 0397</a>
+          <a href="tel:+905435270397" className="text-[var(--main-red)] font-bold hover:underline">+90 543 527 0397</a>
         </div>
         <div>
           <span className="block text-base text-[var(--main-dark)] font-semibold mb-1">E-Posta</span>

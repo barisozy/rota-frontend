@@ -1,0 +1,454 @@
+.fade-section {
+  animation: fadeInSection 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0.2;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s forwards;
+}
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+
+:root {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #222;
+  background-color: #f5f5f5;
+  --main-red: #e30613;
+  --main-dark: #222;
+  --main-light: #f5f5f5;
+  --main-gray: #ededed;
+  --main-radius: 8px;
+  --main-shadow: 0 2px 8px 0 rgba(34, 34, 34, 0.08);
+}
+
+body {
+  background: var(--main-light);
+  color: var(--main-dark);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: block;
+}
+
+#root,
+main,
+section,
+.container,
+.max-w-6xl,
+.max-w-5xl,
+.max-w-4xl,
+.max-w-3xl,
+.mx-auto {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Menü butonları için genel stil */
+/* --- Menu button reset & sane defaults --- */
+.menu-button,
+.menu-button:focus,
+.menu-button:active,
+.menu-button:focus-visible,
+.menu-button:visited,
+.menu-button:link {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none !important;
+  /* tüm borderlara son */
+  outline: none !important;
+  /* mavi outline'ı yok et */
+  box-shadow: none !important;
+  /* gölge / inner-border'ı yok et */
+  background-image: none !important;
+  /* bazı UA'lar gradient ekliyor */
+  background-color: transparent !important;
+
+  -webkit-tap-highlight-color: transparent;
+  /* mobil dokunma vurgusunu kaldır */
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+
+  position: relative;
+  /* ::after için gerekli */
+}
+
+/* Focus/active olunca tekrar görünmemesi için ekstra güvenlik */
+.menu-button:focus,
+.menu-button:active,
+.menu-button:focus-visible {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+/* Eğer Tailwind veya başka global kural 'ring' ekliyorsa onu da söküp at */
+.menu-button:focus-visible {
+  --tw-ring-opacity: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Inset border/outline yapan UA stillerine karşı */
+.menu-button::-moz-focus-inner {
+  /* Firefox inner focus */
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+/* Alt çizgi: başlangıçta şeffaf, active/active-class veya focus-visible olduğunda görünür */
+.menu-button::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 6px;
+  height: 2px;
+  background-color: transparent;
+  border-radius: 2px;
+  transition: background-color;
+  pointer-events: none;
+}
+
+/* Aktif/odaklı butonlarda alt çizgi göster */
+.menu-button.active::after,
+.menu-button:active::after,
+.menu-button:focus-visible::after {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* hafif beyaz çizgi */
+}
+
+/* Opsiyonel: hover'da da hafif çizgi istersen */
+.menu-button:hover::after {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.menu-icon-button,
+.menu-icon-button:focus,
+.menu-icon-button:active,
+.menu-icon-button:focus-visible,
+.menu-icon-button:visited,
+.menu-icon-button:link {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.logo-button,
+.logo-button:focus,
+.logo-button:active,
+.logo-button:focus-visible,
+.logo-button:visited,
+.logo-button:link {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.gallery-window-button,
+.gallery-window-button:focus,
+.gallery-window-button:active,
+.gallery-window-button:focus-visible,
+.gallery-window-button:visited,
+.gallery-window-button:link {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  background-color: var(--main-red) !important;
+
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.gallery-button,
+.gallery-button:focus,
+.gallery-button:active,
+.gallery-button:focus-visible,
+.gallery-button:visited,
+.gallery-button:link {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+  background-image: none !important;
+  background-color: white !important;
+
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  color: inherit;
+}
+
+.gallery-button:focus,
+.gallery-button:active {
+  outline: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+  border-color: var(--main-gray) !important;
+}
+
+.logo-button {
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 2% 1%;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* .counter-img,
+.counter-img:focus,
+.counter-img:active,
+.counter-img:focus-visible,
+.counter-img:visited,
+.counter-img:link {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  background-color: var(--main-red) !important;
+
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+} */
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Chrome, Edge */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--main-light) inset !important;
+  /* arka plan */
+  -webkit-text-fill-color: var(--main-dark) !important;
+  /* text rengi */
+  transition: background-color 5000s ease-in-out 0s;
+  /* ani değişimi önler */
+}
+
+/* Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill {
+  box-shadow: 0 0 0px 1000px var(--main-light) inset !important;
+  -moz-text-fill-color: var(--main-dark) !important;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barisozy.github.io/rota-frontend/sitemap.xml
